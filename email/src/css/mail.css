@@ -1,0 +1,80 @@
+@charset "euc-kr";
+/**
+* Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+* http://cssreset.com
+*/
+/* --------------------------------------
+ * common
+ * -------------------------------------*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {
+margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+
+body,input,textarea,select,button,table{font-family:'µ¸¿ò',Dotum,'±¼¸²',Gulim,Apple Gothic,Tahoma,sans-serif;font-size:12px;-webkit-text-size-adjust:none;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+/* clear */
+.clear {content: "";clear: both;display: block;}
+
+hr {clear:both}
+
+html, body {width:100%:height:100%}
+#wrap {padding:29px;min-width:709px;border:7px solid #e1e1e1;}
+#wrap_mail {padding:29px;min-width:709px;}
+#header, #container, #footer, .section {margin:0 auto;width:709px;}
+#header h1 img {width:130px;}
+caption {
+display: table-caption;visibility: hidden;font-size: 0;width: 0;height: 0;line-height: 0;}
+
+.ctn_section {margin:17px 0 34px;width:709px}
+.ctn_section .btn_01 {margin-top:20px}
+.map_section {width:709px;color:#495368;}
+.map_section .map_info {margin:20px 0 25px 0;}
+.map_section .map_info h3 {margin-bottom:5px;}
+.map_section .map_info p {margin-bottom:18px;line-height:17px;}
+.map_section p.bullet {padding-left:10px;background: url(../images/service_bullet.png) no-repeat 0 4px}
+.map_section p.title {float:left;width:85px;height:auto}
+.map_section .traffic_label {float:left;margin-bottom:5px;}
+.map_section .traffic_label p {height:16px;background:url(../images/traffic_label.png) no-repeat 0 0;}
+.map_section .traffic_label p.trunk {padding-left:38px;background-position: 0 0}
+.map_section .traffic_label p.branch {padding-left:38px;background-position: 0 -16px}
+.map_section .traffic_label p.subway {padding-left:50px;background-position: 0 -32px;}
+
+#footer p {text-align:center}
+#footer p.btn_02 {margin:15px 0 30px}
+#footer span {float:left;text-align:left;margin-top:20px;}
+
+.section .table_title {float:left;width:100%;line-height:22px;height:30px;padding-right:0;margin-top:20px;}
+.section .table_title h1 {float:left;width:30%; background:none;margin-bottom:0;height:22px;text-indent:0;}
+.section .table_title h1.request_edit {float:left;width:30%; background:none;margin-bottom:0;padding-bottom:auto;height:22px;text-indent:0;}
+.section .table_title span {float:right;background:none;width:auto;height:auto;font-size:12px;text-indent:0;color:#000;vertical-align: middle;margin-top:3px}
+.section .tour_application {position:relative;clear:both;width:100%;margin-bottom:30px;}
+.section .tour_application p {margin:5px 0}
+.section .tour_application p img {margin-right:3px;vertical-align: top}
+.section .request_table {width:100%;border-spacing:4px;border-collapse:collapse;}
+.section .request_table th {background:#86c6eb;font-size:13px;text-indent:0;color:#FFF;vertical-align: middle;border-bottom:4px solid #FFF;line-height:16px;}
+.section .request_table th.header_left {border-right:3px solid #FFF;font-size:12px;text-indent:0;}
+.section .request_table th.header_w {width:10%;}
+.section .request_table td {padding:7px;background:#d5dbdf;border-bottom:4px solid #FFF;}
+.section .request_table td p {margin-top:10px !important;color:#000000;}
+.section img.web_noimage {display:inline;margin-right: 3px;margin-top:3px;vertical-align: top;}
+.section .request_table th img {margin-right:3px;margin-top:0;vertical-align: top}
+.section .request_table input {height:18px;padding:5px;width:97.5%;border:none;border: 1px solid #FFF;}
+.section .request_table input.input_size {padding:5px;width:95%;*width:94.5%;border:none;border: 1px solid #FFF;}
+.section .request_table textarea {padding:5px;width:97.5%;height:70px;resize:none;border:none;border: 1px solid #FFF;}
+.section .tour_application div.form_btn {clear:both;margin:10px auto;width:137px;}
+.section .tour_application div.form_btn span {width:137px;}
+.section .tour_application input[type=submit] {*float:left;width:137px;height:32px;background:#7d7d7d;border:none;color:#fff;cursor:pointer;font-size:0;text-indent:-9000px;background:url(../images/btn_03.png) no-repeat 0 0;}
+.section .tour_application .request_table td div.date input {width:60px;*height:24px;*line-height:26px;*padding:0;vertical-align: middle;}
+.section .tour_application .request_table td div label {display:inline;color:#434343;padding-right:10px;font-size:13px;}
+
+
+

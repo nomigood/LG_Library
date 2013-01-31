@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>LG상남도서관소개 &gt; 견학신청접수</title>
+
+<link rel="stylesheet" href="src/css/mail.css" type="text/css" media="screen" charset="euc-kr"/>
+</head>
+<body>
+	<div id="wrap_mail">
+		<div id="header"><h1><img src="src/images/logo.gif" alt="LG상남도서관"></h1></div>
+		<div class="section request">
+			<div class="table_title">
+				<h1><img src="src/images/mail_title01.png" alt="견학신청이 접수되었습니다.  신청자 정보는 다음과 같습니다."></h1>
+				<span><img src="src/images/need_text.png" alt="항목은 필수입력항목입니다."></span>
+			</div>
+			<form action="" method="get" class="tour_application">
+				<fieldset>
+					<table class="request_table" summary="이 폼은 견학신청 작성 폼 입니다.">
+						<caption>견학신청</caption>	
+						<tr>
+							<th colspan="2" scope="row" class="visit"><label for="visit"><img src="src/images/request_title03.png" alt="방문목적(구체적으로 기술요망)"></label></th>
+							<td colspan="3">
+								<textarea id="visit" title="방문목적을 입력해주세요"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<th rowspan="2" scope="row" class="header_left header_left02"><img src="src/images/request_title04.png" alt="방문기관"></th>
+							<th class="organ"><label for="organ"><img src="src/images/request_title05.png" alt="기관명"></label></th>
+							<td>
+								<input type="text" id="organ" class="input_size" title="기관명을 입력해주세요" />
+							</td>
+							<th class="header_w responsible"><label for="responsible"><img src="src/images/request_title09.png" alt="담당자명"></label></th>
+							<td>
+								<input type="text" id="responsible" class="input_size" title="담당자명을 입력해주세요" />
+							</td>
+						</tr>
+						<tr>
+							<th class="phone"><label for="phone"><img src="src/images/request_title06.png" alt="전화"></label></th>
+							<td>
+								<input type="tel" id="phone" class="input_size" title="전화번호를 입력해주세요" />
+							</td>
+							<th class="header_w personnel"><label for="personnel"><img src="src/images/request_title10.png" alt="인원"></label></th>
+							<td>
+								<input type="number" id="personnel" class="input_size" title="인원을 입력해주세요"/>
+							</td>
+						</tr>
+						<tr>
+							<th colspan="2" scope="row" class="date02"><label for="data2"><img src="src/images/request_title07.png" alt="방문희망일시"></label></th>
+							<td colspan="3">
+								<div class="date">
+									<input type="number" id="year" max="2013" min="1950" value="2013"/>
+									<label for="year">년</label>
+									<input type="number" id="month" max="12" min="1"  />
+									<label for="month">월</label>
+									<input type="number" id="day" max="31" min="1"  />
+									<label for="day">일</label>
+									<input type="number" id="time" max="12" min="1" />
+									<label for="time">시</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th colspan="2" scope="row" class="language"><label for="language"><img src="../src/images/sub/request_title08.png" alt="전하고싶은 말씀" / class="noimage"></label></th>
+							<td colspan="3">
+								<textarea id="language" title="전하고 싶은 말씀을 입력해주세요" ></textarea>
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+				<div class="form_btn">
+					<span><input type="submit" class="nanum" value="전송" /></span>
+				</div>
+			</form>
+		</div>
+		<div id="footer"><span><img src="src/images/footer_copy.png" alt="(우)110-280 서울 종로구 창덕궁 1길 18 (원서동 136) LG상남도서관 TEL : (02)708-3700 Fax : (02)708-3718 Copyright ⓒ LG Sangnam Library. All rights reserved." /></span></div>
+	</div>
+</body>
+</html>
