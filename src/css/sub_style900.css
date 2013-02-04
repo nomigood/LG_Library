@@ -1,2 +1,4 @@
 #article .section .data_Status .data .data_list {float:left;padding:0;width:43% \9;*width:43%;}
 #article .section .data_Status .data .use_list {float:right;padding:0;width:54% \9;*width:54%;}
+#article .section .data_Status .data p span {float: left;padding: 0 1% 0 1%;margin: 20px 2% 0 0;width: 46%;max-width: 140px;height: 27px;line-height: 2.6;color: #fff;text-align: right;font-size:11px;}
+#article .section .data_Status .data .use_tablet_bottom {float: right;position: absolute;right: 0;bottom: 0;width: 56%;}

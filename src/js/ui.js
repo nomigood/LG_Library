@@ -10,26 +10,70 @@ $(window).load(function(){
   setTimeout(scrollTo, 0,0,1);
 });
 
+
 //메인 네비게이션
-$(document).ready(function() {
-    var navi_ul = $('.navi ul')
-    var navi_a = $('.navi > a')
+$(function () {
+
+	$("#menu-gnb1 li ul").hide();
+	$("#menu-gnb1 li.current-menu-parent > ul, #menu-gnb1 li.current_page_item > ul,#menu-gnb1 li.current-post-ancestor > ul").show();
+	$("#menu-gnb1 .sub-menu li.current-post-parent").parent().show();
+	$("#menu-gnb1 .sub-menu li.current-post-parent").parent().parent().addClass("current-post-parent");
+	
+	var s_menu = $("#s_menu").val();
+	
+	$('#menu-gnb1 > li').each(function() {
+		
+		 if($(this).attr('id') ==s_menu)		{
+			 
+			$(this).addClass("navi current-menu-parent");
+			$(this).find("ul:first").slideDown(50);
+		}
+		 else
+		{
+			$(this).removeClass("current-menu-parent");
+			$(this).find("ul:first").slideUp(500);
+		}
+	});
+	$('#' + s_menu + ' li').each(function() {
+		var s_sub_menu =  $("#s_sub_menu").val();
+		if(s_sub_menu == $(this).attr('id'))
+		{
+			$(this).addClass("s_sub_menu");
+		}
+	});
+	
+    $("#menu-gnb1 > li > a").bind("click", function(){
     
-    //서브메뉴 영역을 가린다
-    navi_ul.hide(); 
-    
-    //아코디언 메뉴
-    navi_a.click(function(e){                                                      //navi a태그를 클릭했을때
-       e.preventDefault();                                                         //preventDefault는 href로 연결하지 않고 단순 클릭이벤트로 처리한다
-       if(!$(this).hasClass('active')){
-           navi_a.removeClass('active');
-           navi_ul.filter(':visible').slideUp('normal');
-           $(this).addClass('active').next().stop(true,true).slideDown('normal');
-       } else {
-           $(this).removeClass('active');
-           $(this).next().stop(true,true).slideUp('fast');
-       }
-    });
+    	if($(this).parent().hasClass('menu-item-calendar')) {
+    		true;
+    	} else {
+    	
+	    	var id = $(this).parent().attr('id');
+			//alert(id);
+			var selected_id = $(".current-menu-parent").attr("id");// "menu-item-100";
+			//alert(selected_id);
+	    	$('#menu-gnb1 > li').each(function() {
+				if ((!$(this).hasClass('current-menu-item') && !$(this).hasClass('current-post-parent')) && $(this).attr('id') != id &&  $(this).attr('id') != selected_id) {
+					$(this).find("ul:first").slideUp(300);
+				} else {
+					if($(this).attr('id') != selected_id)
+					$(this).find("ul:first").slideToggle(300);
+				}
+	    	});
+			return false;
+		}
+	});
+
+
+
+
+	 $(".nav").bind("click", function(){
+		$("#menu-gnb1 li ul").hide();
+		$("#menu-gnb1 li.current-menu-parent > ul, #menu-gnb1 li.current_page_item > ul,#menu-gnb1 li.current-post-ancestor > ul").slideDown(300);
+	});
+	
+	
+	
 });
 
 

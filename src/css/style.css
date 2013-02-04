@@ -75,11 +75,11 @@ html,body{width:100%;height:100%}
 .m_ctn .library_sns h2 {padding-top:5px;border-bottom:solid 1px #6b7fa6;height:20px;margin-bottom:10px;}
 .m_ctn .library_sns h2 a {color:#6b7fa6;}
 .m_ctn .library_sns ul li a {float: left;width:100%;color:#6d7586;white-space:nowrap;text-overflow: ellipsis;overflow:hidden;}
-.m_ctn .library_sns ul li {padding-left:25px;margin-bottom:5px;width:auto;height:21px;line-height:21px;background:url(../images/sns_ico.png) no-repeat;color:#8b8b8b}
+.m_ctn .library_sns ul li {padding-left:25px;margin-bottom:5px;width:auto;height:21px;line-height:24px;background:url(../images/sns_ico.png) no-repeat;color:#8b8b8b}
 .m_ctn .library_sns ul li.facebook {background-position: 0 0}
-.m_ctn .library_sns ul li.twitter {background-position: 0 -21px}
-.m_ctn .library_sns ul li.me2day {background-position: 0 -42px}
-.m_ctn .library_sns ul li.blog {background-position: 0 -63px}
+.m_ctn .library_sns ul li.twitter {background:url(../images/sns_ico02.png) no-repeat;background-position: 0 0}
+.m_ctn .library_sns ul li.me2day {background:url(../images/sns_ico03.png) no-repeat;background-position: 0 0}
+.m_ctn .library_sns ul li.blog {background:url(../images/sns_ico04.png) no-repeat;background-position: 0 0}
 .moblie_library {display:none;}
 /* foot content */
 /* foot family */

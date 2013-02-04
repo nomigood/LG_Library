@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <script type="text/javascript" src="../src/js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="../src/js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="../src/js/ui.js"></script>
+<input type="hidden" id="s_menu" value="menu-item-110" />
+<input type="hidden" id="s_sub_menu" value="menu-item-111" />
 
 <link rel="stylesheet" href="../src/css/reset.css" type="text/css"/>
 <link id="Style" rel="stylesheet" href="../src/css/sub.css" type="text/css"/>
@@ -54,37 +55,37 @@
 			<div><img src="../src/images/sub/top_bg2.png" alt="책장이미지"/></div>
 		</div>
 		<!--/빌딩이미지-->
-			<ul>
-				<li class="navi">
+			<ul id="menu-gnb1">
+				<li id="menu-item-100" class="navi">
 					<a href="#" class="library_intro">소개</a>
-					<ul class="nanum">
-						<li><a href="../about/about01.html">개요</a></li>
-						<li><a href="../about/about02.html">발자취</a></li>
-						<li><a href="../about/about03.html">재단소개</a></li>
+					<ul class="nanum sub-menu01">
+						<li id="menu-item-101"><a href="../about/about01.html">개요</a></li>
+						<li id="menu-item-102"><a href="../about/about02.html">발자취</a></li>
+						<li id="menu-item-103"><a href="../about/about03.html">재단소개</a></li>
 					</ul>
 				</li>
-				<li class="navi">
+				<li id="menu-item-110" class="navi">
 					<a href="#" class="library_service">서비스</a>
-					<ul class="nanum">
-						<li><a href="../service/service01.html">LG ELIT</a></li>
-						<li><a href="../service/service02.html">LG사이언스랜드</a></li>
-						<li><a href="../service/service03.html">책 읽어주는 도서관</a></li>
+					<ul class="nanum sub-menu02">
+						<li id="menu-item-111"><a href="../service/service01.html">LG ELIT</a></li>
+						<li id="menu-item-112"><a href="../service/service02.html">LG사이언스랜드</a></li>
+						<li id="menu-item-113"><a href="../service/service03.html">책 읽어주는 도서관</a></li>
 					</ul>
 				</li>
-				<li class="navi">
+				<li id="menu-item-120" class="navi">
 					<a href="#" class="library_data">자료실</a>
-					<ul class="nanum">
-						<li><a href="../data/data01.html">통계자료</a></li>
-						<li><a href="../data/data02.html">홍보자료</a></li>
-						<li><a href="../data/data03.html">참고자료</a></li>
+					<ul class="nanum sub-menu03">
+						<li id="menu-item-121"><a href="../data/data01.html">통계자료</a></li>
+						<li id="menu-item-122"><a href="../data/data02.html">홍보자료</a></li>
+						<li id="menu-item-123"><a href="../data/data03.html">참고자료</a></li>
 					</ul>
 				</li>
-				<li class="navi">
+				<li id="menu-item-130" class="navi">
 					<a href="#" class="library_info">이용안내</a>
-					<ul class="nanum">
-						<li><a href="../info/info01.html">시설 및 이용안내</a></li>
-						<li><a href="../info/info02.html">견학신청</a></li>
-						<li><a href="../info/info03.html">연락처/약도</a></li>
+					<ul class="nanum sub-menu04">
+						<li id="menu-item-131"><a href="../info/info01.html">시설 및 이용안내</a></li>
+						<li id="menu-item-132"><a href="../info/info02.html">견학신청</a></li>
+						<li id="menu-item-133"><a href="../info/info03.html">연락처/약도</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -173,7 +174,7 @@
 					<h4 class="title_service nanum"><img src="../src/images/sub/s_service02.png" alt="영어논문 튜토리얼 / 영어논문 감수 서비스" class="noimage"/>영어논문 튜토리얼 / 영어논문 감수 서비스</h4>
 					<p class="service_right bullet">이공계 분야의 영어 논문을 작성하기 위한 기본 지식을 담은 맞춤형 학습 프로그램인 <a href="http://www.lg.or.kr/servlet/support?cmd=TUTORIAL" target="_blank" title="새창열림">영어논문 튜토리얼</a>을 비롯, 과학기술 분야의 박사학위를 소지하고 있는 영어 원어민이 직접 감수해드리는 <a href="http://www.lg.or.kr/servlet/help/notice?cmd=DETAIL&page=1&idx=249" target="_blank" title="새창열림">영어논문감수서비스</a>를 시행하고 있습니다.</p>
 					<h4 class="title_service nanum"><img src="../src/images/sub/s_service03.png" alt="기술동향정보" class="noimage"/>기술동향정보</h4>
-					<p class="service_right bullet">IT를 비롯한 각 <a href="http://www.lg.or.kr/servlet/tech/fieldBoard?cmd=LIS" target="_blank" title="새창열림">분야별 동향정보</a>, LG경제연구원과의 제휴를 통한 <a href="http://www.lg.or.kr/servlet/tech/industryBoard?cmd=WEBZINELIST" target="_blank" title="새창열림">산업동향정보</a>, <a href="http://www.lg.or.kr/servlet/blog" target="_blank" title="새창열림">과학블로그</a>, <a href="http://www.lg.or.kr/servlet/tech/sncmovieBoard?cmd=WEBZINELIST" target="_blank" title="새창열림">과학동영상</a>, <a href="http://www.lg.or.kr/servlet/tech/sncnewsBoard?cmd=LIST" target="_blank" title="새창열림">과학뉴스</a> 등의 컨텐츠를 통해 최신과학분야의 소식을 신속하게 전달하고 있습니다. </p>
+					<p class="service_right bullet">IT를 비롯한 각 <a href="http://www.lg.or.kr/servlet/tech/fieldBoard?cmd=LIST" target="_blank" title="새창열림">분야별 동향정보</a>, LG경제연구원과의 제휴를 통한 <a href="http://www.lg.or.kr/servlet/tech/industryBoard?cmd=WEBZINELIST" target="_blank" title="새창열림">산업동향정보</a>, <a href="http://www.lg.or.kr/servlet/blog" target="_blank" title="새창열림">과학블로그</a>, <a href="http://www.lg.or.kr/servlet/tech/sncmovieBoard?cmd=WEBZINELIST" target="_blank" title="새창열림">과학동영상</a>, <a href="http://www.lg.or.kr/servlet/tech/sncnewsBoard?cmd=LIST" target="_blank" title="새창열림">과학뉴스</a> 등의 컨텐츠를 통해 최신과학분야의 소식을 신속하게 전달하고 있습니다. </p>
 				</div>				
 			</div>
 			<div class="section">
@@ -186,16 +187,14 @@
 				<h4 class="title_service service_margin service_margin02 nanum"><img src="../src/images/sub/s_service05.png" alt="비디오 자료대출" class="noimage"/>비디오 자료대출</h4>
 				<div class="buttom">
 					<p class="service_right service_margin service_padd bullet"><a href="http://www.lg.or.kr/autonomysearch?service=list&cmd=MainList&qConditionField=all&pageNum=1&maxResults=5&printFields=*&dreDB=AV_MANAGE&rSearch=false&deepSearch=false&popFlag=false&videoList=theme,new,pop&popdiv=7&successPage=./jsp/service/education/av/av_main.jsp" target="_blank" title="새창열림">학술비디오</a> 서비스 내에서 검색 가능한 비디오 자료</p>
-					<p class="service_right service_margin bullet">대출 학술비디오 FAQ </p>
-					<div class="faq_button nanum"><a href="http://www.lg.or.kr/servlet/education?cmd=AVLOAN" target="_blank" title="새창열림">바로가기</a></div>
-					<div class="faq_button_mobile nanum"><a href="service01_faq.html">바로가기</a></div>
+					<p class="service_right service_margin bullet">대출 학술비디오 FAQ <a href="http://www.lg.or.kr/servlet/education?cmd=AVLOAN" class="faq_button nanum" target="_blank" title="새창열림">바로가기</a><a href="service01_faq.html" class="faq_button_mobile nanum">바로가기</a></p>
+					
 				</div>
 
 				<h4 class="title_service service_margin selit_margin nanum"><img src="../src/images/sub/s_service06.png" alt="모바일 이용방법" class="noimage"/>모바일 이용방법</h4>
 				<div class="buttom">
-					<p class="service_right service_margin service_padd bullet">LG ELIT 서비스를 모바일에서도 이용가능 (<a href="http://m.lg.or.kr" target="_blank" title="새창열림">m.lg.or.kr</a>)</p>
+					<p class="service_right service_margin service_padd bullet">LG ELIT 서비스를 모바일에서도 이용가능 (m.lg.or.kr) <a href="http://m.lg.or.kr" class="mobile_button nanum" target="_blank" title="새창열림">모바일 서비스 바로가기</a></p>
 					<div class="qrcode"><img src="../src/images/sub/service_qrcode.png" alt="모바일 웹페이지 바로가기" /></div>
-					<div class="mobile_button nanum"><a href="http://m.lg.or.kr" target="_blank" title="새창열림">모바일 서비스 바로가기</a></div>
 				</div>
 
 				<h4 class="title_service service_margin service_qr nanum"><img src="../src/images/sub/s_service07.png" alt="LG ELIT 이용문의" class="noimage"/>LG ELIT 이용문의</h4>

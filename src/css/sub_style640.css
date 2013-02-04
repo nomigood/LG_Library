@@ -38,10 +38,15 @@ html,body {width:100%;height:100%;margin:0;padding:0}
 .sub_gnb ul li.navi a.library_service {background-position: -100px 8px;background-color: #639dcb;}
 .sub_gnb ul li.navi a.library_data {background-position: -100px 8px;background-color: #8fbada;}
 .sub_gnb ul li.navi a.library_info {background-position: -100px 8px;background-color: #c8e4f2;}
-.sub_gnb ul li ul {position:absolute;padding-left:0;margin-top:0;display:block;background:#f3f4f6; width:100%;height:27px;left:0;line-height:27px;*top:27px;*padding-top:5px;}
+.sub_gnb ul li ul {position:absolute;padding-left:0;margin-top:0;display:block;background:#f3f4f6; width:auto;height:27px;left:0;line-height:2.4;*top:27px;*padding-top:5px;}
 .sub_gnb ul li ul li {width:100%;line-height:18px;display:inline;float: none;}
 .sub_gnb ul li ul li a {color:#868992;text-decoration: none;padding-left:20px;}
 .sub_gnb ul li ul li a:hover {color:#676c78;}
+.sgnb_bg_color1, .sgnb_bg_color2, .sgnb_bg_color3, .sgnb_bg_color4 {background:#f3f4f6;height:56px;*float:left;}
+.sub_gnb ul li.s_sub_menu a{color:#333;}
+.sub_gnb ul li ul.sub-menu02 {padding-left:5%;}
+.sub_gnb ul li ul.sub-menu03 {right:0;left:auto;padding-right:5%;width:100%;text-align:right;}
+.sub_gnb ul li ul.sub-menu04 {right:0;left:auto;float:right;padding-right:1%;width:100%;text-align:right;}
 
 .sub_title {display:none;}
 
@@ -49,7 +54,7 @@ html,body {width:100%;height:100%;margin:0;padding:0}
 
 /* sub container */
 #article div.pg_path {display:none;}
-#article h3.pg_subject {padding:6px 11px;margin:12px 10px 26px 10px;max-width:620px;*max-width:none;background:#ecf4f8;line-height:14px;font-size:0.85em;font-weight:bold;color:#499bca;display:block;}
+#article h3.pg_subject {padding:6px 11px;margin:12px 10px 26px 10px;*float:left;max-width:620px;*max-width:none;background:#ecf4f8;line-height:14px;font-size:0.85em;font-weight:bold;color:#499bca;display:block;}
 #article h3.pg_subject p {padding-left:4px;display: table;border-left:2px solid #94c7e4;*border-left:0;}
 #article h3.pg_subject div {float:left;clear:left;padding:0 6px 4px 0;font-size:110%;line-height:14px;*padding-bottom:5%;}
 #article .section {float:left;position: relative;margin:0 10px 20px 10px;max-width:620px;display:block;}
@@ -63,10 +68,13 @@ html,body {width:100%;height:100%;margin:0;padding:0}
 #article .section .r_button {float:right;line-height:21px;*vertical-align:middle;}
 #article .section .r_button a {float:right;padding:0 10px;height:21px;font-size:11px;line-height:21px;background:#707070;color:#FFFFFF;text-indent:0px;text-align: center;text-decoration: none;}
 #article .section .r_button a:hover {background:#496a9a;}
+
+#article .section .about_button {*clear:both;float:right;*float:none;top:0;right:0;line-height:1.98;margin-top:20px;}
+#article .section .about_button a {float:right;padding:3px 10px;font-size:11px;height:23px;line-height:2.3;background:#496a9a;color:#FFFFFF;text-indent:0px;text-align: center;text-decoration: none;}
+#article .section .about_button a:hover {background:#707070;}
+
 #article .section .back a {background:#496a9a;top:0;right:0;margin-bottom:5px;}
 #article .section .faq_button {display:none;}
-#article .section .faq_button_mobile a {float:left;padding:0 10px;height:21px;font-size:11px;line-height:21px;background:#707070;color:#FFFFFF;text-indent:0px;text-align: center;text-decoration: none;}
-#article .section .faq_button_mobile a:hover {background:#496a9a;}
 #article .section .mobile_button {float:left;position:absolute;top:20px;left:10px;font-weight: bold;line-height:21px;}
 #article .section .mobile_button a {float:left;padding:0 10px;height:21px;font-size:11px;line-height:21px;background:#707070;color:#FFFFFF;text-indent:0px;text-align: center;text-decoration: none;}
 #article .section .mobile_button a:hover {background:#496a9a;}
@@ -90,8 +98,8 @@ html,body {width:100%;height:100%;margin:0;padding:0}
 #article .section div p.service_padd {margin-bottom:5px;clear:both;}
 #article .section div .service_qr {margin-top:40px;*margin-top:60px;}
 #article .section div p.bullet {border-left:0;padding-left:8px;*width:98%;background: url(../mobile_images/sub/service_bullet03.png) no-repeat left 5px;}
-#article .section div.learning {position:absolute;top:40px;left:28px;z-index: 10;}
-#article .section div.learning li {padding-left:8px;height:20px;background: url(../images/sub/service_bullet02.png) no-repeat left 8px;color:#495368;}
+#article .section div.learning {position:absolute;top:40px;left:28px;z-index: 10;;width:100px;}
+#article .section div.learning li {padding-left:8px;height:20px;width:100px;background: url(../images/sub/service_bullet02.png) no-repeat left 8px;color:#495368;}
 #article .section div.education {top:40px;left:185px;}
 #article .section div.study {top:225px;left:28px;}
 #article .section div.technical {top:225px;left:185px;}
@@ -125,9 +133,11 @@ html,body {width:100%;height:100%;margin:0;padding:0}
 #article .section h1 p.elit_bu {float:none;display:inline;width:65%;*float:left;*width:67%;vertical-align:top;font-size: 14px;margin-bottom:5px;}
 #article .section div .line {top: 0px;z-index:0;*background: url(../images/sub/service_elit_ma.png) no-repeat left top; *width:300px;*height:338px;}
 #article div.section img.no_img_ie7 {*display:none;}
-#article .section .faq_button_mobile {float:left;position:absolute;top:20px;left:137px;font-weight: bold;line-height:21px;display:block;}
 #article .section div p span.pink a {padding-left:5px;color:#f01c67;font-weight: bold;text-decoration: none;}
 #article .section div p img {float: none;vertical-align: middle;}
+
+#article .section .buttom p a.faq_button_mobile {margin-left:5px;padding:0 10px;height:21px;font-size:11px;line-height:2.1;background:#707070;color:#FFFFFF;text-indent:0px;font-weight: bold;text-align: center;text-decoration: none;display:inline-block;}
+#article .section .buttom p a:hover.faq_button_mobile {background:#496a9a;}
 /* /LG ELIT*/
 
 /* 학술비디오 FAQ*/
@@ -144,16 +154,15 @@ html,body {width:100%;height:100%;margin:0;padding:0}
 #article .section div p.service_book {margin-bottom:5px;clear:both;*height:30px;}
 #article .section h4.service_margin02 {margin-left:0px;*margin-top:0px;}
 #article .section div .line_lg {position: relative;top: 0;z-index:0;*background: url(../mobile_images/sub/service_elit02_mo.png) no-repeat left top; width:300px;height:338px;float:none;margin:0 auto;}
-#article .section .land_button {float:left;position:absolute;top:-3px;left:220px;font-weight: bold;line-height:2.05;}
-#article .section .land_button a {float:left;padding:0 10px;height:21px;font-size:11px;line-height:2.05;background:#707070;color:#FFFFFF;text-indent:0px;text-align: center;text-decoration: none;}
-#article .section .land_button a:hover {background:#496a9a;}
+#article .section a.land_button {margin-left:10px;margin-top:0;padding:0 10px;height:21px;font-size:11px;line-height:21px;background:#707070;color:#FFFFFF;text-indent:0px;font-weight: bold;text-align: center;text-decoration: none;display:inline-block;}
+#article .section a:hover.land_button {background:#496a9a;}
 #article .section div p.service_padd.land_margin {*float:left;margin:30px 0 0 0;*margin:30px 0 0 0;clear:both;*width:100%;*display:block;max-width:600px;}
 #article .section .sland_button {float:left;position:relative;top:5px;left:9px;*left:9px;font-weight: bold;line-height:2.05;}
 #article .section .sland_button a, #article .section .sland_button02 a {float:left;padding:0 10px;height:21px;font-size:11px;line-height:2.05;background:#707070;color:#FFFFFF;text-indent:0px;text-align: center;text-decoration: none;}
 #article .section div .land_qr {margin-top:35px;*margin-top:55px;}
 #article .section .sland_button02 {float:left;position:relative;top:5px;left:15px;*top:-1px;*left:165px;font-weight: bold;line-height:2.05;}
 #article .section h4.service_margin_land {margin-left:0px;margin-top:20px;}
-#article .section .lg_button {float:left;position:absolute;top:20px;left:9px;font-weight: bold;line-height:2.05;display:block;}
+#article .section .lg_button {float:left;position:absolute;top:20px;left:0;font-weight: bold;line-height:2.05;display:block;}
 #article .section .lg_button a {position:relative;float:left;padding:0 10px;height:21px;font-size:11px;line-height:2.05;background:#707070;color:#FFFFFF;text-indent:0px;text-align: center;text-decoration: none;}
 
 #article .data table.land_table {margin-top:30px;width:100%;font-weight:bold;border-collapse:collapse;}
@@ -203,7 +212,7 @@ html,body {width:100%;height:100%;margin:0;padding:0}
 #article .section .data_Status .data ul li > span {color:#6d7586;*float:left;position: relative;*width:100%;}
 #article .section .data_Status .data p {width:100%;border:none;padding:0}
 #article .section .data_Status .data .data_total {padding-right:10px;*width:195px;margin-top:7px;max-width:195px;height:27px;line-height:2.4;text-align:right;background:#496a9a;color:#fff}
-#article .section .data_Status .data p span {float:left;padding:0 2% 0 4%;margin:7px 2% 0 0;width:43%;max-width:110px;height:27px;line-height:2.4;color:#fff;text-align:right;}
+#article .section .data_Status .data p span {float:left;padding:0 2% 0 4%;margin:7px 2% 0 0;width:43%;max-width:140px;height:27px;line-height:2.4;color:#fff;text-align:right;}
 #article .section .data_Status .data p em.data_bold {font-weight:bold;font-style: normal;}
 #article .section .data_Status .data p span:last-of-type {margin-right:0}
 #article .section .data_Status .data p span.light_blue {background:#8fbad9;}
@@ -352,6 +361,7 @@ html,body {width:100%;height:100%;margin:0;padding:0}
 #article .section .traffic_label em.branch {width:34px;height:16px;background-position: 0 -16px;}
 #article .section .traffic_label em.subway {width:46px;height:16px;background-position: 0 -32px;}
 #article .section .traffic_label em.subway {width:46px;height:16px;background-position: 0 -32px;}
+#article .section .article .tab-cont {width:100%;height:100%;}
 
 /*공통부분*/
 #article .section .common_box {float:left;padding:0;width:99%;border:1px solid #e1e1e1}
