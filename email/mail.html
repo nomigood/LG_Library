@@ -3,7 +3,68 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=euc-kr" />
 	<title>신청자 발송 메일 서식</title>
-	<link rel="stylesheet" href="src/css/mail.css" type="text/css" media="screen" charset="euc-kr"/>
+	
+	<style type="text/css">
+		@charset "euc-kr";
+		/**
+		* Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+		* http://cssreset.com
+		*/
+		/* --------------------------------------
+		 * common
+		 * -------------------------------------*/
+		html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {
+		margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+		
+		body,input,textarea,select,button,table{font-family:'돋움',Dotum,'굴림',Gulim,Apple Gothic,Tahoma,sans-serif;font-size:12px;-webkit-text-size-adjust:none;}
+		
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+		body {line-height: 1;}
+		ol, ul {list-style: none;}
+		blockquote, q {quotes: none;}
+		blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+		table {border-collapse: collapse;border-spacing: 0;}
+		
+		/* clear */
+		.clear {content: "";clear: both;display: block;}
+		
+		hr {clear:both}
+		
+		html, body {width:100%:height:100%}
+		#wrap {padding:29px;min-width:709px;border:7px solid #e1e1e1;}
+		#wrap_mail {padding:29px;min-width:709px;}
+		#header, #container, #footer, .section {margin:0 auto;width:709px;}
+		#header {padding-bottom:17px;border-bottom:3px solid #85C5EB;}
+		#header h1 img {width:130px;}
+		caption {
+		display: table-caption;visibility: hidden;font-size: 0;width: 0;height: 0;line-height: 0;}
+		
+		#header h1 {width:709px;border-bottom:3px solid ##85C5EB;}
+		.ctn_section {margin:17px 0 34px;width:709px;}
+		.ctn_section .ctn p {margin:1em;color:#656565}
+		.ctn_section .ctn p strong {color:#F19763;font-weight:bold;}
+		.ctn_section .btn_01 {margin-top:20px;text-align:center}
+		.map_section {width:709px;color:#495368;}
+		.map_section h2 {padding:8px 0;border-top:1px solid #85C5EB;border-bottom:1px solid #85C5EB}
+		.map_section .map_info {margin:10px 0 25px 0;}
+		.map_section .map_info h3 {margin-bottom:5px;}
+		.map_section .map_info p {margin-bottom:10px;line-height:17px;}
+		.map_section h3.bullet {padding-left:10px;background: url(src/images/service_bullet.png) no-repeat 0 4px}
+		.map_section p.title {float:left;width:85px;height:auto}
+		.map_section p {margin-left:12px;}
+		.map_section .traffic_label {float:left;margin-bottom:5px;}
+		.map_section .traffic_label p {height:16px;background:url(src/images/traffic_label.png) no-repeat 0 0;}
+		.map_section .traffic_label p.trunk {padding-left:38px;background-position: 0 0}
+		.map_section .traffic_label p.branch {padding-left:38px;background-position: 0 -16px}
+		.map_section .traffic_label p.subway {padding-left:50px;background-position: 0 -32px;}
+		
+		#footer {padding-top:5px;}
+		#footer address {margin:30px 0 0 0;text-align:center}
+		/*#footer p.btn_02 {margin:15px 0 30px}*/
+	</style>
 </head>
 <body>
 	<div id="wrap">
@@ -12,21 +73,27 @@
 		</div>
 		<div id="container">
 			<div class="ctn_section">
-				<img src="src/images/content.png" alt="" />
-				<p class="btn_01"><a href="#"><img src="src/images/btn_01.png" alt="신청정보 확인하기"></a></p>
+				<div class="ctn">
+					<p>안녕하세요. LG상남도서관입니다.</p>
+	                <p><strong>2012년 12월 21일</strong> 신청주신 견학신청이 승인되었습니다.</p>
+					<p>견학신청 정보 확인후 방문 희망 일시에 방문하여 주시면 됩니다.</p>
+					<p>더 좋은 모습으로 함께 할 수 있는 도서관이 될 수 있도록 노력하겠습니다.</p>
+					<p>감사합니다.</p>	
+				</div>
+				<p class="btn_01"><a href="#"><img src="src/images/btn_01.gif" alt="신청정보 확인하기"></a></p>
 			</div>
 			<div class="map_section">
-				<h2><img src="src/images/map_h2.png" alt="찾아오시는 길"></h2>
+				<h2><img src="src/images/map_h2.gif" alt="찾아오시는 길"></h2>
 				<div class="map_info">
-					<h3><img src="src/images/h2_info06.png" alt="주소" /></h3>
-					<p class="bullet">(우)110-280  서울 종로구 창덕궁 1길 18 (원서동 136번지) LG상남도서관</p>
-					<h3><img src="src/images/h2_info07.png" alt="찾아오시는 길" /></h3>
-					<p class="bullet">LG상남도서관은 창덕궁(비원) 옆 현대그룹 사옥 뒷편에 있으며,
+					<h3 class="bullet"><img src="src/images/h2_info06.png" alt="주소" /></h3>
+					<p>(우)110-280  서울 종로구 창덕궁 1길 18 (원서동 136번지) LG상남도서관</p>
+					<h3 class="bullet"><img src="src/images/h2_info07.png" alt="찾아오시는 길" /></h3>
+					<p>LG상남도서관은 창덕궁(비원) 옆 현대그룹 사옥 뒷편에 있으며,
 						지하철 3호선 안국역에서 하차 후, 현대빌딩 방향(3번 출구)으로
 						나오셔서 도보로 5-10분 거리에 위치하고 있습니다.</p>
-					<h3><img src="src/images/h2_info08.png" alt="교통편" class="noimage"/></h3>
+					<h3 class="bullet"><img src="src/images/h2_info08.png" alt="교통편" class="noimage"/></h3>
 					<div>
-						<p class="bullet title">버스 이용</p>
+						<p class="title">버스 이용</p>
 						<div class="traffic_label">
 							<p class="trunk">109, 151, 162, 171, 172, 272, 601</p>
 							<p class="branch">7052</p>
@@ -41,10 +108,8 @@
 				</div>
 			</div>
 		</div>
-		<hr size="2px" width="709px" noshade color="#ebebeb" />
 		<div id="footer">
-			<p class="btn_02"><a href="#"><img src="src/images/btn_02.png" alt="확인"></a></p>
-			<p><img src="src/images/copyright.png" alt="" /></p>
+			<address><img src="src/images/copyright.png" alt="(우)110-280 서울 종로구 창덕궁 1길 18 (원서동 136) LG상남도서관 TEL : (02)708-3700 Fax : (02)708-3718 Copyright ⓒ LG Sangnam Library. All rights reserved." /></address>
 		</div>
 	</div>
 </body>
