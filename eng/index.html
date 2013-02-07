@@ -1,31 +1,27 @@
 <!DOCTYPE html> 
 <html lang="ko">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
-<title>LG»ó³²µµ¼­°ü</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>LGìƒë‚¨ë„ì„œê´€</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<meta http-equiv="cache-control" content="no-cache" />
-<meta http-equiv="pragma" content="no-cache" />
-<meta http-equiv="expires" content="0" />
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/ui.js"></script>
-<link rel="stylesheet" href="css/reset.css" type="text/css"/>
-<link id="Style" rel="stylesheet" href="css/style.css" type="text/css"/>
+<script type="text/javascript" src="src/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="src/js/ui.js"></script>
+
+<link rel="stylesheet" href="src/css/reset.css" type="text/css"/>
+<link id="Style" rel="stylesheet" href="src/css/style.css" type="text/css"/>
 <script type="text/javascript">
 	(function () {
 		$("#Style").attr("media", "only screen and (min-width: 641px)");
 	})();
 </script>
-<link rel="stylesheet" media="only screen and (max-width: 1050px)" type="text/css" href="css/style1050.css" />		
-<link rel="stylesheet" media="only screen and (max-width: 800px)" type="text/css" href="css/style800.css" />
-<link rel="stylesheet" media="only screen and (max-width: 700px)" type="text/css" href="css/style700.css" />
-<link rel="stylesheet" media="only screen and (max-width: 640px)" type="text/css" href="css/style640.css" />
+<link rel="stylesheet" media="only screen and (max-width: 1050px)" type="text/css" href="src/css/style1050.css" />		
+<link rel="stylesheet" media="only screen and (max-width: 800px)" type="text/css" href="src/css/style800.css" />
+<link rel="stylesheet" media="only screen and (max-width: 700px)" type="text/css" href="src/css/style700.css" />
+<link rel="stylesheet" media="only screen and (max-width: 640px)" type="text/css" href="src/css/style640.css" />
 
-
-<script type="text/javascript" src="js/media_query.js"></script>
+<script type="text/javascript" src="src/js/media_query.js"></script>
 <!--[if lt IE 9]> 
 <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script> 
 <![endif]-->
@@ -34,59 +30,59 @@
 <body>
 <!-- #wrap -->
 <div id="wrap">
-	<!-- #º»¹®¹Ù·Î°¡±â -->
+	<!-- #ë³¸ë¬¸ë°”ë¡œê°€ê¸° -->
 	<div class="skip">
-		<a href="#container">º»¹® ¹Ù·Î°¡±â</a>
+		<a href="#container">ë³¸ë¬¸ ë°”ë¡œê°€ê¸°</a>
 	</div>
-	<!-- /º»¹®¹Ù·Î°¡±â -->
+	<!-- /ë³¸ë¬¸ë°”ë¡œê°€ê¸° -->
 	<!-- #header -->
 	<div id="header">
 		<!--logo-->
-		<h1><a href="#"><img src="images/logo.gif" alt="LG»ó³²µµ¼­°ü"/></a></h1>
+		<h1><a href="/"><img src="src/images/logo.gif" alt="LGìƒë‚¨ë„ì„œê´€"/></a></h1>
 		<!--/logo-->
 	</div>
 	<!-- /#header -->
 	<!--navigation-->
 	<div class="gnb">
-		<ul>
-			<li class="navi">
-				<a href="#" class="library_intro">¼Ò°³</a>
-				<ul  class="nanum">
-					<li><a href="">°³¿ä</a></li>
-					<li><a href="">¹ßÀÚÃë</a></li>
-					<li><a href="">Àç´Ü¼Ò°³</a></li>
-				</ul>
-			</li>
-			<li class="navi">
-				<a href="#" class="library_service">¼­ºñ½º</a>
-				<ul class="nanum">
-					<li><a href="">LG ELIT</a></li>
-					<li><a href="">LG»çÀÌ¾ð½º·£µå</a></li>
-					<li><a href="">Ã¥ ÀÐ¾îÁÖ´Â µµ¼­°ü</a></li>
-				</ul>
-			</li>
-			<li class="navi">
-				<a href="#" class="library_data">ÀÚ·á½Ç</a>
-				<ul class="nanum">
-					<li><a href="">Åë°èÀÚ·á</a></li>
-					<li><a href="">È«º¸ÀÚ·á</a></li>
-					<li><a href="">Âü°íÀÚ·á</a></li>
-				</ul>
-			</li>
-			<li class="navi">
-				<a href="#" class="library_info">ÀÌ¿ë¾È³»</a>
-				<ul class="nanum">
-					<li><a href="">½Ã¼³ ¹× ÀÌ¿ë¾È³»</a></li>
-					<li><a href="">°ßÇÐ½ÅÃ»</a></li>
-					<li><a href="">¿¬¶ôÃ³/¾àµµ</a></li>
-				</ul>
-			</li>
-		</ul>
-		<p><a href="#">English</a></p>
+		<ul id="menu-gnb1">
+				<li id="menu-item-100" class="navi">
+					<a href="#" class="library_intro">ì†Œê°œ</a>
+					<ul class="nanum sub-menu01">
+						<li id="menu-item-101"><a href="about/about01.html">ê°œìš”</a></li>
+						<li id="menu-item-102"><a href="about/about02.html">ë°œìžì·¨</a></li>
+						<li id="menu-item-103"><a href="about/about03.html">ìž¬ë‹¨ì†Œê°œ</a></li>
+					</ul>
+				</li>
+				<li id="menu-item-110" class="navi">
+					<a href="#" class="library_service">ì„œë¹„ìŠ¤</a>
+					<ul class="nanum sub-menu02">
+						<li id="menu-item-111"><a href="service/service01.html">LG ELIT</a></li>
+						<li id="menu-item-112"><a href="service/service02.html">LGì‚¬ì´ì–¸ìŠ¤ëžœë“œ</a></li>
+						<li id="menu-item-113"><a href="service/service03.html">ì±… ì½ì–´ì£¼ëŠ” ë„ì„œê´€</a></li>
+					</ul>
+				</li>
+				<li id="menu-item-120" class="navi">
+					<a href="#" class="library_data">ìžë£Œì‹¤</a>
+					<ul class="nanum sub-menu03">
+						<li id="menu-item-121"><a href="data/data01.html">í†µê³„ìžë£Œ</a></li>
+						<li id="menu-item-122"><a href="data/data02.html">í™ë³´ìžë£Œ</a></li>
+						<li id="menu-item-123"><a href="data/data03.html">ì°¸ê³ ìžë£Œ</a></li>
+					</ul>
+				</li>
+				<li id="menu-item-130" class="navi">
+					<a href="#" class="library_info">ì´ìš©ì•ˆë‚´</a>
+					<ul class="nanum sub-menu04">
+						<li id="menu-item-131"><a href="info/info01.html">ì‹œì„¤ ë° ì´ìš©ì•ˆë‚´</a></li>
+						<li id="menu-item-132"><a href="info/info02.html">ê²¬í•™ì‹ ì²­</a></li>
+						<li id="menu-item-133"><a href="info/info03.html">ì—°ë½ì²˜/ì•½ë„</a></li>
+					</ul>
+				</li>
+			</ul>
+		<p><a href="eng/">English</a></p>
 		<!--/navigation-->
 		</div>
-	<div class="m_img_bg"><img src="images/building.png" alt="ºôµùÀÌ¹ÌÁö"/></div>
-	<div class="m_cube_bg">ÀüÃ¼¹é±×¶ó¿îµå</div>
+	<div class="m_img_bg"><img src="src/images/building.png" alt="ë¹Œë”©ì´ë¯¸ì§€"/></div>
+	<div class="m_cube_bg">ì „ì²´ë°±ê·¸ë¼ìš´ë“œ</div>
 	<!-- #container -->
 	<div id="container">
 		<div class="container_box">			
@@ -94,16 +90,16 @@
 		<div class="cube_box">
 			<div class="m_cube">
 				<div>
-					<a href="http://www.lg.or.kr/servlet/main" target="_blank" title="»õÃ¢¿­¸²" class="cube_btn1">°úÇÐ ±â¼ú Á¤º¸ÀÇ º¸°í LG ELIT ¹Ù·Î°¡±â</a>
-					<a href="#" class="lib_zoom1"> °úÇÐ ±â¼ú Á¤º¸ÀÇ º¸°í LG ELIT ÀÚ¼¼È÷º¸±â</a>
+					<a href="http://www.lg.or.kr/servlet/main" target="_blank" title="ìƒˆì°½ì—´ë¦¼" class="cube_btn1">ê³¼í•™ ê¸°ìˆ  ì •ë³´ì˜ ë³´ê³  LG ELIT ë°”ë¡œê°€ê¸°</a>
+					<a href="service/service01.html" class="lib_zoom1"> ê³¼í•™ ê¸°ìˆ  ì •ë³´ì˜ ë³´ê³  LG ELIT ìžì„¸ížˆë³´ê¸°</a>
 				</div>
 				<div>
-					<a href="http://www.lg-sl.net/" target="_blank" title="»õÃ¢¿­¸²" class="cube_btn2">³ª´Â »çÀÌ¹ö °úÇÐ³ª¶ó »çÀÌ¾ð½º·£µå ¹Ù·Î°¡±â</a>
-					<a href="#" class="lib_zoom2">³ª´Â »çÀÌ¹ö °úÇÐ³ª¶ó »çÀÌ¾ð½º·£µå ÀÚ¼¼È÷º¸±â</a>
+					<a href="http://www.lg-sl.net/" target="_blank" title="ìƒˆì°½ì—´ë¦¼" class="cube_btn2">ë‚˜ëŠ” ì‚¬ì´ë²„ ê³¼í•™ë‚˜ë¼ ì‚¬ì´ì–¸ìŠ¤ëžœë“œ ë°”ë¡œê°€ê¸°</a>
+					<a href="service/service02.html" class="lib_zoom2">ë‚˜ëŠ” ì‚¬ì´ë²„ ê³¼í•™ë‚˜ë¼ ì‚¬ì´ì–¸ìŠ¤ëžœë“œ ìžì„¸ížˆë³´ê¸°</a>
 				</div>
 				<div>
-					<a href="http://voice.lg.or.kr/" target="_blank" title="»õÃ¢¿­¸²" class="cube_btn3">¼¼°è ÃÖÃÊ U-Library Ã¥ ÀÐ¾îÁÖ´Â µµ¼­°ü ¹Ù·Î°¡±â</a>
-					<a href="#" class="lib_zoom3">¼¼°è ÃÖÃÊ U-Library Ã¥ ÀÐ¾îÁÖ´Â µµ¼­°ü ÀÚ¼¼È÷º¸±â</a>
+					<a href="http://voice.lg.or.kr/" target="_blank" title="ìƒˆì°½ì—´ë¦¼" class="cube_btn3">ì„¸ê³„ ìµœì´ˆ U-Library ì±… ì½ì–´ì£¼ëŠ” ë„ì„œê´€ ë°”ë¡œê°€ê¸°</a>
+					<a href="service/service03.html" class="lib_zoom3">ì„¸ê³„ ìµœì´ˆ U-Library ì±… ì½ì–´ì£¼ëŠ” ë„ì„œê´€ ìžì„¸ížˆë³´ê¸°</a>
 				</div>	
 			</div>
 		</div>		
@@ -111,30 +107,30 @@
 		<div class="m_ctn">
 			<!--library notice-->
 			<div class="library_notice">
-			    <h2><img src="images/lib_news.png" alt="µµ¼­°ü ¼Ò½Ä" /></h2>
+			    <h2><img src="src/images/lib_news.png" alt="ë„ì„œê´€ ì†Œì‹" /></h2>
 				<ol>
-					<li><a href=""><strong>[ELIT]</strong> LG LTE¿Í ÇÔ²²ÇÏ´Â ½Ã¿øÇÑ ¿©¸§³ª±â ÀÌº¥Æ®</a></li>
-					<li><a href=""><strong>[»çÀÌ¾ð½º·£µå]</strong> LG»çÀÌ¾ð½º·£µå °úÇÐ¼Û È«º¸´ë»ç, °¡¼ö '³ëÀ»'</a></li>
-					<li><a href=""><strong>[Ã¥ÀÐ¾îÁÖ´Âµµ¼­°ü]</strong> 2012³â Ã¥ ÀÐ¾îÁÖ´Â µµ¼­°ü ¼³¹®Á¶»ç ¾È³»</a></li>
+					<li><a href=""><strong>[ELIT]</strong> LG LTEì™€ í•¨ê»˜í•˜ëŠ” ì‹œì›í•œ ì—¬ë¦„ë‚˜ê¸° ì´ë²¤íŠ¸</a></li>
+					<li><a href=""><strong>[ì‚¬ì´ì–¸ìŠ¤ëžœë“œ]</strong> LGì‚¬ì´ì–¸ìŠ¤ëžœë“œ ê³¼í•™ì†¡ í™ë³´ëŒ€ì‚¬, ê°€ìˆ˜ 'ë…¸ì„'</a></li>
+					<li><a href=""><strong>[ì±…ì½ì–´ì£¼ëŠ”ë„ì„œê´€]</strong> 2012ë…„ ì±… ì½ì–´ì£¼ëŠ” ë„ì„œê´€ ì„¤ë¬¸ì¡°ì‚¬ ì•ˆë‚´</a></li>
 				</ol>
 			</div>
 			<!--/library notice-->
 			<!--sns_latest-->
 			<div class="library_sns">
-			    <h2><img src="images/sns_sangnam.png" alt="¼Ò¼ÈLG»ó³²µµ¼­°ü" /></h2>
+			    <h2><img src="src/images/sns_sangnam.png" alt="ì†Œì…œLGìƒë‚¨ë„ì„œê´€" /></h2>
 			    <ul>
-			        <li class="facebook"><a href="">´ÙÀ½ÁÖ ¸ñ¿äÀÏÀÎ 11¿ù 18ÀÏ¿¡´Â ´ëÇÐ¼öÇÐ´É·Â ½ÃÇèÀÌ Ä¡·ïÁý´Ï´Ù.</a></li>
-			        <li class="twitter"><a href="">¼º·ç ºÏ Æä½ºÆ¼¹ú ±â°£µ¿¾È LG»ó³²µµ¼­°ü ºÎ½º¿¡ ¹æ¹®ÇØÁÖ¼Å¼­ °¨»çÇÕ´Ï´Ù.</a></li>
-			        <li class="me2day"><a href="">¼­¿ï½ÃÃ» ±¤Àå¿¡¼­ '2012 ¼­¿ï ºÏ Æä½ºÆ¼¹ú'ÀÌ ¿­¸®´Â°ÍÀ» ¾Æ½Ã³ª¿ä?</a></li>
-			        <li class="blog"><a href="">²À °¡º¸°í ½ÍÀºµ¥ ³»ÀÏÀº °¥ ¼ö ÀÖÀ»·±Áö¿ä.»ç¶ûÇØ¿ä</a></li>
+			        <li class="facebook"><a href="">ë‹¤ìŒì£¼ ëª©ìš”ì¼ì¸ 11ì›” 18ì¼ì—ëŠ” ëŒ€í•™ìˆ˜í•™ëŠ¥ë ¥ ì‹œí—˜ì´ ì¹˜ë¤„ì§‘ë‹ˆë‹¤.</a></li>
+			        <li class="twitter"><a href="">ì„±ë£¨ ë¶ íŽ˜ìŠ¤í‹°ë²Œ ê¸°ê°„ë™ì•ˆ LGìƒë‚¨ë„ì„œê´€ ë¶€ìŠ¤ì— ë°©ë¬¸í•´ì£¼ì…”ì„œ ê°ì‚¬í•©ë‹ˆë‹¤.</a></li>
+			        <li class="me2day"><a href="">ì„œìš¸ì‹œì²­ ê´‘ìž¥ì—ì„œ '2012 ì„œìš¸ ë¶ íŽ˜ìŠ¤í‹°ë²Œ'ì´ ì—´ë¦¬ëŠ”ê²ƒì„ ì•„ì‹œë‚˜ìš”?</a></li>
+			        <li class="blog"><a href="">ê¼­ ê°€ë³´ê³  ì‹¶ì€ë° ë‚´ì¼ì€ ê°ˆ ìˆ˜ ìžˆì„ëŸ°ì§€ìš”.ì‚¬ëž‘í•´ìš”</a></li>
 			    </ul>
 			</div>
 			<!--/sns_latest-->
 		</div>
 		<div class="moblie_library">
 		<ul>
-			<li class="mobile_notice"><a href="#">µµ¼­°ü¼Ò½Ä</a></li>
-			<li class="mobile_sns"><a href="#">¼Ò¼ÈLG»ó³²µµ¼­°ü</a></li>
+			<li class="mobile_notice"><a href="#">ë„ì„œê´€ì†Œì‹</a></li>
+			<li class="mobile_sns"><a href="#">ì†Œì…œLGìƒë‚¨ë„ì„œê´€</a></li>
 		</ul>
 	</div>
 	</div>
@@ -149,37 +145,37 @@
 			<div class="foot_mobile">	
 			<!-- family site -->			
 			<div id="fmsite1" class="family_site">
-				<p class="family_title"><a href="#" onclick="return false">ÆÐ¹Ð¸®»çÀÌÆ®</a></p>
+				<p class="family_title"><a href="#" onclick="return false">íŒ¨ë°€ë¦¬ì‚¬ì´íŠ¸</a></p>
 				<ul class="family_list">
-					<li class="first"><a href="http://www.lg.or.kr/" target="_blank" title="»õÃ¢¿­¸²">LG ELIT</a></li>
-					<li><a href="http://www.lg-sl.net/" target="_blank" title="»õÃ¢¿­¸²">LG »çÀÌ¾ð½º·£µå</a></li>
-					<li><a href="http://voice.lg.or.kr/" target="_blank" title="»õÃ¢¿­¸²">Ã¥ ÀÐ¾îÁÖ´Â µµ¼­°ü</a></li>
-					<li><a href="http://1004.lg.or.kr/" target="_blank" title="»õÃ¢¿­¸²">LG°øÀÍÀç´Ü</a></li>
-					<li><a href="http://www.lgart.com/" target="_blank" title="»õÃ¢¿­¸²">LG¾ÆÆ®¼¾ÅÍ</a></li>
-					<li><a href="http://www.konjiamarboretum.com/" target="_blank" title="»õÃ¢¿­¸²">°ïÁö¾Ï¼ö¸ñ¿ø</a></li>
-					<li class="rast"><a href="http://www.lg.co.kr/index/index.dev" target="_blank" title="»õÃ¢¿­¸²">With LG</a></li>
+					<li class="first"><a href="http://www.lg.or.kr/" target="_blank" title="ìƒˆì°½ì—´ë¦¼">LG ELIT</a></li>
+					<li><a href="http://www.lg-sl.net/" target="_blank" title="ìƒˆì°½ì—´ë¦¼">LG ì‚¬ì´ì–¸ìŠ¤ëžœë“œ</a></li>
+					<li><a href="http://voice.lg.or.kr/" target="_blank" title="ìƒˆì°½ì—´ë¦¼">ì±… ì½ì–´ì£¼ëŠ” ë„ì„œê´€</a></li>
+					<li><a href="http://1004.lg.or.kr/" target="_blank" title="ìƒˆì°½ì—´ë¦¼">LGê³µìµìž¬ë‹¨</a></li>
+					<li><a href="http://www.lgart.com/" target="_blank" title="ìƒˆì°½ì—´ë¦¼">LGì•„íŠ¸ì„¼í„°</a></li>
+					<li><a href="http://www.konjiamarboretum.com/" target="_blank" title="ìƒˆì°½ì—´ë¦¼">ê³¤ì§€ì•”ìˆ˜ëª©ì›</a></li>
+					<li class="rast"><a href="http://www.lg.co.kr/index/index.dev" target="_blank" title="ìƒˆì°½ì—´ë¦¼">With LG</a></li>
 				</ul>
 			</div>
 			<!-- /family site -->
-			<!-- Çù·Â±â°ü»çÀÌÆ® -->
+			<!-- í˜‘ë ¥ê¸°ê´€ì‚¬ì´íŠ¸ -->
 			<div id="fmsite2" class="family_site">
-				<p class="select_title"><a href="#" onclick="return false">Çù·Â±â°ü»çÀÌÆ®</a></p>
+				<p class="select_title"><a href="#" onclick="return false">í˜‘ë ¥ê¸°ê´€ì‚¬ì´íŠ¸</a></p>
 				<ul class="family_list">
-					<li class="first"><a href="http://www.lgislove.co.kr/" target="_blank" title="»õÃ¢¿­¸²">LG±×·ìºí·Î±×</a></li>
-					<li><a href="http://www.lovegen.co.kr/" target="_blank" title="»õÃ¢¿­¸²">LG·¯ºêÁ¦³Ê·¹ÀÌ¼Ç</a></li>
-					<li><a href="http://www.lgscience.co.kr/" target="_blank" title="»õÃ¢¿­¸²">LG»çÀÌ¾ð½ºÈ¦</a></li>					
-					<li><a href="http://www.keris.or.kr" target="_blank" title="»õÃ¢¿­¸²">ÇÑ±¹±³À°ÇÐ¼úÁ¤º¸¿ø</a></li>
-					<li><a href="http://www.lgeri.com" target="_blank" title="»õÃ¢¿­¸²">LG°æÁ¦¿¬±¸¿ø</a></li>
-					<li class="rast"><a href="http://www.dongascience.com/" target="_blank" title="»õÃ¢¿­¸²">µ¿¾Æ»çÀÌ¾ð½º</a></li>
+					<li class="first"><a href="http://www.lgislove.co.kr/" target="_blank" title="ìƒˆì°½ì—´ë¦¼">LGê·¸ë£¹ë¸”ë¡œê·¸</a></li>
+					<li><a href="http://www.lovegen.co.kr/" target="_blank" title="ìƒˆì°½ì—´ë¦¼">LGëŸ¬ë¸Œì œë„ˆë ˆì´ì…˜</a></li>
+					<li><a href="http://www.lgscience.co.kr/" target="_blank" title="ìƒˆì°½ì—´ë¦¼">LGì‚¬ì´ì–¸ìŠ¤í™€</a></li>					
+					<li><a href="http://www.keris.or.kr" target="_blank" title="ìƒˆì°½ì—´ë¦¼">í•œêµ­êµìœ¡í•™ìˆ ì •ë³´ì›</a></li>
+					<li><a href="http://www.lgeri.com" target="_blank" title="ìƒˆì°½ì—´ë¦¼">LGê²½ì œì—°êµ¬ì›</a></li>
+					<li class="rast"><a href="http://www.dongascience.com/" target="_blank" title="ìƒˆì°½ì—´ë¦¼">ë™ì•„ì‚¬ì´ì–¸ìŠ¤</a></li>
 				</ul>
 			</div>
 			</div>	
-			<!-- Çù·Â±â°ü»çÀÌÆ® -->
+			<!-- í˜‘ë ¥ê¸°ê´€ì‚¬ì´íŠ¸ -->
 			<!--fnb-->
 			<div class="fnb">
-				<a href="#" class="family_menu03">°³ÀÎÁ¤º¸Ãë±Þ¹æÄ§</a>
-				<a href="#" class="family_menu04">ÀÌ¸ÞÀÏ¹«´Ü¼öÁý°ÅºÎ</a>
-				<a href="#" class="family_menu05">»çÀÌÆ®¸Ê</a>
+				<a href="etc/privacypolicy.html" class="family_menu03">ê°œì¸ì •ë³´ì·¨ê¸‰ë°©ì¹¨</a>
+				<a href="etc/emailspam.html" class="family_menu04">ì´ë©”ì¼ë¬´ë‹¨ìˆ˜ì§‘ê±°ë¶€</a>
+				<a href="etc/sitemap.html" class="family_menu05">ì‚¬ì´íŠ¸ë§µ</a>
 			</div>					
 			<!--/fnb-->	
 			</div>			
@@ -187,7 +183,7 @@
 		<!-- copyright -->
 		<address class="copy">
 			<div class="copyright">
-			(¿ì)110-280 ¼­¿ï Á¾·Î±¸ Ã¢´ö±Ã 1±æ 18(¿ø¼­µ¿ 136)LG»ó³²µµ¼­°ü <br />
+			(ìš°)110-280 ì„œìš¸ ì¢…ë¡œêµ¬ ì°½ë•ê¶ 1ê¸¸ 18(ì›ì„œë™ 136)LGìƒë‚¨ë„ì„œê´€ <br />
 		    Copyright LG Sangnam Library. All right reserved.
 		    </div>
 		</address>

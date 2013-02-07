@@ -1,0 +1,8 @@
+@charset "euc-kr";
+/* style author:nomi(nomi@dbays.com) */
+
+#footer {overflow:hidden;}
+/* main content */
+.m_ctn .library_notice ol li a {float:left;width:85%;white-space:nowrap;text-overflow: ellipsis;overflow:hidden;}
+.m_ctn .library_sns ul li a {float: left;width:85%;color:#6d7586;white-space:nowrap;text-overflow: ellipsis;overflow:hidden;}
+
